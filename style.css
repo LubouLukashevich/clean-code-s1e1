@@ -34,6 +34,14 @@
   margin: 0 auto 0;
 }
 
+.section {
+  margin: 16px 0 0;
+}
+
+.section:nth-last-child(1) {
+  margin: 0;
+}
+
 .task-new,
 .task-text,
 .task {
@@ -44,6 +52,7 @@
 
 .task-row-wrapper {
   display: flex;
+  margin-top: 20px;
 }
 
 .ul {
@@ -76,8 +85,7 @@
 }
 
 /* Heading */
-.h3,
-.label-new-task {
+.h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -108,8 +116,9 @@
 
 /* New Task */
 .label-new-task {
-  display: block;
-  margin: 0 0 20px;
+  display: none;
+  /*display: block;
+  margin: 0 0 20px;*/
 }
 
 #new-task {
